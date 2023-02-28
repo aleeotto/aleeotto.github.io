@@ -8,28 +8,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Kaushan+Script&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
-    <title>CV</title>
+    <title>CV Michael Scott</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/doodle/256/office.png">
 </head>
 
 <body>
     <header> <!--Foto de perfil y titulo-->
-        <img id="foto_perfil" src="https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png" alt="Michael Scott" style="float: left;">
+      <!--la foto de perfil tiene un script para cambiar por un gif al posar el cursor sobre la misma-->
+        <img id="foto_perfil" src="https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png" alt="Michael Scott" style="float: left;" onmouseover="cambiarimg('foto_perfil')" onmouseout="imagendefault('foto_perfil')">
         <h1 id="titulo">Michael Gary Scott</h1>
     </header>
-        <!--datos de contacto-->
+        <!--datos de contacto en la barra de navegacion-->
+        <!--los iconos de la barra de navegacion cambian de tamaño al pasar el cursor por arriba-->
     <nav class="navbar navbar-light bg-light"> 
         <div class="container-fluid">
           <a class="navbar-brand" href="tel:+1 484-897-0257">
-            <img class="icon" src="C:\Users\andre\OneDrive\Escritorio\CV\recursos\phone.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            <img id="cel" class="icon" src="C:\Users\andre\OneDrive\Escritorio\CV\recursos\phone.svg" alt="" width="30" height="24" class="d-inline-block align-text-top" onmouseover="aumentar('cel')" onmouseout="tamañodefault('cel')">
             <p class="datos">+1 484-897-0257</p>
           </a>
           <a class="navbar-brand" href="https://goo.gl/maps/P4sTawUqbAtohdfNA">
-            <img class="icon" src="C:\Users\andre\OneDrive\Escritorio\CV\recursos\house.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            <img id="casa" class="icon" src="C:\Users\andre\OneDrive\Escritorio\CV\recursos\house.svg" alt="" width="30" height="24" class="d-inline-block align-text-top" onmouseover="aumentar('casa')" onmouseout="tamañodefault('casa')">
             <p class="datos">Calle Mulberry 2230, Scranton</p>
           </a>
           <a class="navbar-brand" href="mailto:littlekidlover@dundermifflin.com">
-            <img class="icon" src="C:\Users\andre\OneDrive\Escritorio\CV\recursos\envelope-at.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            <img id="mail" class="icon" src="C:\Users\andre\OneDrive\Escritorio\CV\recursos\envelope-at.svg" alt="" width="30" height="24" class="d-inline-block align-text-top" onmouseover="aumentar('mail')" onmouseout="tamañodefault('mail')">
             <p class="datos">littlekidlover@dundermifflin.com</p>
           </a>
         
@@ -173,5 +176,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
+    <script src="js/javascript.js"></script>   
+  </body>
 </html>
