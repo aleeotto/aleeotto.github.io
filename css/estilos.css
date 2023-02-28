@@ -1,0 +1,53 @@
+#titulo {
+    background-color: lightsalmon;
+    text-align: right;
+    color: rgb(103, 103, 103);
+    font-size: 60px;
+    padding: 40px 40px 40px 20px;
+    font-family:'Kaushan Script', cursive;
+}
+
+#foto_perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    margin-left: 20px;   
+}
+
+
+.container-fluid{
+    width: 80%;
+}
+
+
+.datos {
+    
+    font-family: 'Shantell Sans', cursive;
+    font-weight: bold;
+    
+}
+
+.icon {
+    margin-right: 5px;
+    float: left;
+    width: 35px;
+}
+
+.icon2 {
+    margin-right: 5px;
+    float: left;
+    width: 15px;
+}
+.perfil {
+    text-align: left;
+    float: left;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+   
+}
+
+.texto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
