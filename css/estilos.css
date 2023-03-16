@@ -51,8 +51,3 @@
 .texto {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-@-ms-viewport{
-    zoom: 1.0;
-    width: device-width;
-}
